@@ -46,11 +46,8 @@
 /*rgb(152,215,241)*/
 /*rgb(108,124,74)*/
 
-main {}
 
-main a {
-  color: #000;
-}
+
 
 body {
   background-image: url(../fundos/fundo-roxo.png);
@@ -229,29 +226,39 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
-box-shadow: 10px 10px 0px #3e3970;
-border-radius: 5px;
-overflow: hidden;
+  box-shadow: 10px 10px 0px #3e3970;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .search {
   display: flex;
   flex-direction: row;
- 
-  padding: 50px;
+align-items: center;
+  padding: 25px;
   background-color: white;
   justify-content: space-between;
   box-shadow: 10px 10px 0px #3e3970;
- 
+
+}
+.LOGO_ESCRITA{
+  font-size: 30px;
+color: #3e3970;
+}
+
+.search picture .User {
+  border: #7167CA solid;
+  border-radius: 10px;
 }
 
 .category {
- 
+
   padding: 30px;
   background-color: #d2eeff;
 }
 
 .options {
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -290,14 +297,14 @@ overflow: hidden;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap:
-    20px;
+  column-gap: 20px;
   padding: 0 30px;
 
 
 }
 
 .post-it {
+  min-height: 40vh;
   letter-spacing: 1.5px;
   display: grid;
   grid-auto-rows: min-content 1fr;
@@ -338,7 +345,9 @@ box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
 .post-it ul {
   font-family: "gagalin";
-
+  display: flex;
+  flex-direction: column;
+justify-content:space-around;
   list-style: disc;
   /*por enquanto*/
   grid-row: 2;
@@ -349,13 +358,14 @@ box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
 .post-it li a {
   color: #413570;
+  padding: 10px 20px 10px 0;
 }
 
 .post-it li {
   list-style: disc;
   font-size: 20px;
   cursor: pointer;
-  padding: 10px 10px 0 0;
+  max-width: max-content;
   color: #413570;
 
 }
