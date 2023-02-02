@@ -63,7 +63,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+
 }
 
 header {
@@ -141,6 +141,7 @@ a:hover {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   letter-spacing: 3px;
   width: 15%;
   font-family: Verdana, sans-serif;
@@ -219,6 +220,8 @@ a:hover {
 }
 
 /*cabeçalho / menu*/
+
+
 /*Search Menu*/
 .search_menu {
   margin: 25px;
@@ -233,22 +236,57 @@ a:hover {
 
 .search {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-align-items: center;
+  align-items: center;
   padding: 25px;
   background-color: white;
   justify-content: space-between;
   box-shadow: 10px 10px 0px #3e3970;
 
 }
-.LOGO_ESCRITA{
+.LOGO_ESCRITA a{
   font-size: 30px;
-color: #3e3970;
+  color: #3e3970;
 }
 
-.search picture .User {
-  border: #7167CA solid;
-  border-radius: 10px;
+.User {
+  border: #7167CA solid 2px;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden ;
+
+  
+  cursor: pointer;
+}
+
+.search_search {
+  display: flex;
+  height: 35px;
+}
+
+.search_box {
+  border: #7EC5A5 solid 5px;
+  border-radius: 8px 0 0 8px;
+}
+
+.search_search img {
+  border: #7EC5A5 solid 5px;
+  padding: 3px;
+  border-radius: 0 8px 8px 0;
+
+}
+
+.User-img{
+  opacity: 50%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.User-img:hover{
+  opacity: 100%;
+
 }
 
 .category {
@@ -264,16 +302,22 @@ color: #3e3970;
   justify-content: space-around;
 }
 
-.options li {
-
-  border: solid;
-}
 
 .options li a {
   width: 100%;
-  border: solid;
+  font-weight: 700;
   padding: 0 25px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -433,6 +477,7 @@ footer .feed {
   width: 30px;
   margin: 0 15px;
   cursor: pointer;
+  opacity: 0.5px;
 }
 
 .devs {
